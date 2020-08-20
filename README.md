@@ -24,3 +24,17 @@ Kafka Connect architecture is as below :
 
 ![image kafka connect](https://github.com/rajatgupta828/TwitterkafkaConnect/blob/master/images/KafkaConnectArc.png)
 
+
+To show the example of kafka Connect API, we are using https://github.com/jcustenborder/kafka-connect-twitter
+
+He has already written a connector, we will use this to read the data from twitter.
+All Connectors are under kafka-connect Directory.
+We need to Run the connect profile and will do the job for us :).
+
+#Kafka Streams
+Kafka Streams is a java library that provides easy data processing and transformation within Kafka.
+![image kafka connect](https://github.com/rajatgupta828/TwitterkafkaConnect/blob/master/images/KafkaStreamArc.png)
+
+Check the module : kafka-stream-filter-tweets for more information on Kafka Streams.
+
+
