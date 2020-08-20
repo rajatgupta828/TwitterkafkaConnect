@@ -1,4 +1,6 @@
 # TwitterkafkaConnect
+
+
 This is the sample project which can be used to make sure we are able to connect Kafka and Java code.
 
 This Project will have sample codes to :
@@ -7,6 +9,18 @@ This Project will have sample codes to :
 3. Will Consume the data from the Kafka topic.
 4. Push the data into Bonsai search(Elastic Search).
 
+#Partition Count and Replication factor
+'Try to Plan the config in the beginning itself.'
+
+##More partition implies >>
+  Better parallelism and better Throughput, Ability to run more consumers.
+  1. Small Cluster (< 6 Brokers) == Number of partition = Number of Brokers X 2.
+  2. Big Cluster (> 12 Brokers) ==  NUmber of partition = Number of Brokers X 1
+
+# Replication factor
+  Minimum 2, Usually 3, Maximum 4
+  Never set to 1
+  
 
 
 # Important Details
@@ -36,5 +50,16 @@ Kafka Streams is a java library that provides easy data processing and transform
 ![image kafka connect](https://github.com/rajatgupta828/TwitterkafkaConnect/blob/master/images/KafkaStreamArc.png)
 
 Check the module : kafka-stream-filter-tweets for more information on Kafka Streams.
+
+#Schema Registry
+Schema registry should be a seperate component from kafka
+The producers and Consumers should be able to talk to these schema registries.
+The Schema registry must be able to reject bad data.
+A common data format must be agreed upon.
+
+## Check confluent Schema registry.
+In this case kafka will send the Avro content to Kafka and will send the schema to Schema registry.
+Consumer will recieve the schema from Schema Registry and recieve the data.
+
 
 
