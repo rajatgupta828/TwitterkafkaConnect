@@ -22,6 +22,5 @@ This Project will have sample codes to :
 
 Kafka Connect architecture is as below :
 
-![image kafka connect](/images/KafkaConnectArc.PNG)
+![image kafka connect](https://github.com/rajatgupta828/TwitterkafkaConnect/blob/master/images/KafkaConnectArc.png)
 
- 
