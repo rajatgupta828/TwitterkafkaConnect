@@ -6,7 +6,7 @@ Labels:             beta.kubernetes.io/arch=amd64
                     eks.amazonaws.com/capacityType=SPOT
                     eks.amazonaws.com/nodegroup=
                     eks.amazonaws.com/nodegroup-image=
-                    eks.amazonaws.com/sourceLaunchTemplateId=lt-04b51e91341785a29
+                    eks.amazonaws.com/sourceLaunchTemplateId=
                     eks.amazonaws.com/sourceLaunchTemplateVersion=1
                     failure-domain.beta.kubernetes.io/region=ap-south-1
                     failure-domain.beta.kubernetes.io/zone=ap-south-1a
@@ -73,24 +73,6 @@ Non-terminated Pods:          (18 in total)
   Namespace                   Name                                                 CPU Requests  CPU Limits  Memory Requests  Memory Limits  AGE
   ---------                   ----                                                 ------------  ----------  ---------------  -------------  ---
   kube-system                 aws-node-7l8p5                                       25m (1%)      0 (0%)      0 (0%)           0 (0%)         15d
-  kube-system                 ebs-csi-node-xwblb                                   0 (0%)        0 (0%)      0 (0%)           0 (0%)         18d
-  kube-system                 kube-proxy-chtbn                                     100m (5%)     0 (0%)      0 (0%)           0 (0%)         18d
-  monitoring                  fluent-bit-2qxp4                                     100m (5%)     100m (5%)   128Mi (4%)       128Mi (4%)     18d
-  monitoring                  prom-stag-stag-mon-prometheus-node-exporter-jnzxp    0 (0%)        0 (0%)      0 (0%)           0 (0%)         18d
-  steve                       adam-ui-express-6ddd9f4845-6gvdj                     50m (2%)      600m (31%)  200Mi (6%)       800Mi (25%)    17d
-  steve                       coupon-ui-express-logs-86977b9f9d-ndtbw              15m (0%)      150m (7%)   50Mi (1%)        150Mi (4%)     18d
-  steve                       dmg-ui-backbone-c5975d7f-dk5kz                       15m (0%)      150m (7%)   50Mi (1%)        150Mi (4%)     15d
-  steve                       droplet-shoryuken-rails-6557884f97-mpt75             50m (2%)      600m (31%)  300Mi (9%)       900Mi (28%)    56m
-  steve                       hospital-odin-ui-express-logs-7bdf4965cf-5cqzn       50m (2%)      600m (31%)  200Mi (6%)       600Mi (18%)    17d
-  steve                       identity-labs-vyked-7cc84fc44b-dj4b9                 25m (1%)      600m (31%)  100Mi (3%)       600Mi (18%)    17d
-  steve                       loki-ui-express-6c77d99c4c-bptn8                     25m (1%)      600m (31%)  100Mi (3%)       600Mi (18%)    15d
-  steve                       merchant-aggregator-sanic-78c5549558-wdk7t           25m (1%)      600m (31%)  100Mi (3%)       600Mi (18%)    10d
-  steve                       opshub-service-sanic-59d8d945db-5qf6s                25m (1%)      600m (31%)  100Mi (3%)       600Mi (18%)    6d22h
-  steve                       raven-vyked-76c67f7d4d-c578s                         25m (1%)      600m (31%)  100Mi (3%)       600Mi (18%)    18d
-  steve                       registry-registry-65d664c9d7-tw2zs                   50m (2%)      600m (31%)  200Mi (6%)       800Mi (25%)    15d
-  steve                       retail-odin-sanic-6848dd7c8-f8rm9                    50m (2%)      600m (31%)  200Mi (6%)       600Mi (18%)    16d
-  steve                       sms-sanic-54985dcc9b-ns5jk                           25m (1%)      600m (31%)  100Mi (3%)       600Mi (18%)    17d
-Allocated resources:
   (Total limits may be over 100 percent, i.e., overcommitted.)
   Resource                    Requests      Limits
   --------                    --------      ------
