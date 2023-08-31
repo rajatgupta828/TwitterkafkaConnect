@@ -1,0 +1,101 @@
+Name:               ip-10-1-7-117.ap-south-1.compute.internal
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/instance-type=c5a.large
+                    beta.kubernetes.io/os=linux
+                    eks.amazonaws.com/capacityType=SPOT
+                    eks.amazonaws.com/nodegroup=
+                    eks.amazonaws.com/nodegroup-image=
+                    eks.amazonaws.com/sourceLaunchTemplateId=lt-04b51e91341785a29
+                    eks.amazonaws.com/sourceLaunchTemplateVersion=1
+                    failure-domain.beta.kubernetes.io/region=ap-south-1
+                    failure-domain.beta.kubernetes.io/zone=ap-south-1a
+                    k8s.io/cloud-provider-aws=
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=
+                    kubernetes.io/os=linux
+                    node.kubernetes.io/instance-type=c5a.large
+                    topology.ebs.csi.aws.com/zone=ap-south-1a
+                    topology.kubernetes.io/region=ap-south-1
+                    topology.kubernetes.io/zone=ap-south-1a
+                    vpc.amazonaws.com/eniConfig=ap-south-1a
+Annotations:        alpha.kubernetes.io/provided-node-ip:
+                    csi.volume.kubernetes.io/nodeid: {"ebs.csi.aws.com":""}
+                    node.alpha.kubernetes.io/ttl: 15
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Sat, 12 Aug 2023 14:54:00 +0000
+Taints:             dedicated_to_env=steve:NoSchedule
+Unschedulable:      false
+Lease:
+  HolderIdentity:  ip-10-1-7-117.ap-south-1.compute.internal
+  AcquireTime:     <unset>
+  RenewTime:       Thu, 31 Aug 2023 11:13:25 +0000
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Thu, 31 Aug 2023 11:11:13 +0000   Sat, 12 Aug 2023 14:53:57 +0000   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Thu, 31 Aug 2023 11:11:13 +0000   Mon, 14 Aug 2023 09:07:18 +0000   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Thu, 31 Aug 2023 11:11:13 +0000   Sat, 12 Aug 2023 14:53:57 +0000   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Thu, 31 Aug 2023 11:11:13 +0000   Sat, 12 Aug 2023 14:54:28 +0000   KubeletReady                 kubelet is posting ready status
+Addresses:
+
+  Hostname:     ip-10-1-7-117.ap-south-1.compute.internal
+  InternalDNS:  ip-10-1-7-117.ap-south-1.compute.internal
+Capacity:
+  attachable-volumes-aws-ebs:  25
+  cpu:                         2
+  ephemeral-storage:           41930732Ki
+  hugepages-1Gi:               0
+  hugepages-2Mi:               0
+  memory:                      3943372Ki
+  pods:                        24
+Allocatable:
+  attachable-volumes-aws-ebs:  25
+  cpu:                         1930m
+  ephemeral-storage:           37569620724
+  hugepages-1Gi:               0
+  hugepages-2Mi:               0
+  memory:                      3253196Ki
+  pods:                        24
+System Info:
+  Machine ID:                 ec23c3885215c37c7f05b3267135d58a
+  System UUID:                ec23c388-5215-c37c-7f05-b3267135d58a
+  Boot ID:                    13a9ecd8-5868-44ea-ada9-1cf5047e532d
+  Kernel Version:             5.10.184-175.731.amzn2.x86_64
+  OS Image:                   Amazon Linux 2
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://1.6.19
+  Kubelet Version:            v1.24.15-eks-a5565ad
+  Kube-Proxy Version:         v1.24.15-eks-a5565ad
+ProviderID:                   aws:///ap-south-1a/i-089253b8f42dbf0c1
+Non-terminated Pods:          (18 in total)
+  Namespace                   Name                                                 CPU Requests  CPU Limits  Memory Requests  Memory Limits  AGE
+  ---------                   ----                                                 ------------  ----------  ---------------  -------------  ---
+  kube-system                 aws-node-7l8p5                                       25m (1%)      0 (0%)      0 (0%)           0 (0%)         15d
+  kube-system                 ebs-csi-node-xwblb                                   0 (0%)        0 (0%)      0 (0%)           0 (0%)         18d
+  kube-system                 kube-proxy-chtbn                                     100m (5%)     0 (0%)      0 (0%)           0 (0%)         18d
+  monitoring                  fluent-bit-2qxp4                                     100m (5%)     100m (5%)   128Mi (4%)       128Mi (4%)     18d
+  monitoring                  prom-stag-stag-mon-prometheus-node-exporter-jnzxp    0 (0%)        0 (0%)      0 (0%)           0 (0%)         18d
+  steve                       adam-ui-express-6ddd9f4845-6gvdj                     50m (2%)      600m (31%)  200Mi (6%)       800Mi (25%)    17d
+  steve                       coupon-ui-express-logs-86977b9f9d-ndtbw              15m (0%)      150m (7%)   50Mi (1%)        150Mi (4%)     18d
+  steve                       dmg-ui-backbone-c5975d7f-dk5kz                       15m (0%)      150m (7%)   50Mi (1%)        150Mi (4%)     15d
+  steve                       droplet-shoryuken-rails-6557884f97-mpt75             50m (2%)      600m (31%)  300Mi (9%)       900Mi (28%)    56m
+  steve                       hospital-odin-ui-express-logs-7bdf4965cf-5cqzn       50m (2%)      600m (31%)  200Mi (6%)       600Mi (18%)    17d
+  steve                       identity-labs-vyked-7cc84fc44b-dj4b9                 25m (1%)      600m (31%)  100Mi (3%)       600Mi (18%)    17d
+  steve                       loki-ui-express-6c77d99c4c-bptn8                     25m (1%)      600m (31%)  100Mi (3%)       600Mi (18%)    15d
+  steve                       merchant-aggregator-sanic-78c5549558-wdk7t           25m (1%)      600m (31%)  100Mi (3%)       600Mi (18%)    10d
+  steve                       opshub-service-sanic-59d8d945db-5qf6s                25m (1%)      600m (31%)  100Mi (3%)       600Mi (18%)    6d22h
+  steve                       raven-vyked-76c67f7d4d-c578s                         25m (1%)      600m (31%)  100Mi (3%)       600Mi (18%)    18d
+  steve                       registry-registry-65d664c9d7-tw2zs                   50m (2%)      600m (31%)  200Mi (6%)       800Mi (25%)    15d
+  steve                       retail-odin-sanic-6848dd7c8-f8rm9                    50m (2%)      600m (31%)  200Mi (6%)       600Mi (18%)    16d
+  steve                       sms-sanic-54985dcc9b-ns5jk                           25m (1%)      600m (31%)  100Mi (3%)       600Mi (18%)    17d
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource                    Requests      Limits
+  --------                    --------      ------
+  cpu                         655m (33%)    7 (362%)
+  memory                      1928Mi (60%)  7728Mi (243%)
+  ephemeral-storage           0 (0%)        0 (0%)
+  attachable-volumes-aws-ebs  0             0
+Events:                       <none>
